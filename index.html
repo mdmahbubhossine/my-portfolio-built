@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md Mahabub (Game Developer)</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon-DrnZO2UM.png" />
+    <meta
+      name="description"
+      content="Delivers an exact replica of a specified website, enabling users to access identical content and features for seamless browsing and interaction."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      #root {
+        height: 100%;
+      }
+
+      .loader-screen {
+        position: fixed;
+        inset: 0;
+        background: #0b0b0f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      .loader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .spinner {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 5px solid rgba(255, 255, 255, 0.08);
+        border-top: 5px solid #fd6f00;
+        animation: spin 1s linear infinite;
+        box-shadow:
+          0 0 20px rgba(253, 111, 0, 0.6),
+          0 0 50px rgba(253, 111, 0, 0.35);
+      }
+
+      .loader h2 {
+        color: white;
+        font-size: 26px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      .loader h2 span::after {
+        content: "";
+        animation: dots 1.5s infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes dots {
+        0% {
+          content: "";
+        }
+        25% {
+          content: ".";
+        }
+        50% {
+          content: "..";
+        }
+        75%,
+        100% {
+          content: "...";
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-X4AerIxo.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DhyUa2Jc.css">
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="loader-screen">
+        <div class="loader">
+          <div class="spinner"></div>
+          <h2>Loading<span></span></h2>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
